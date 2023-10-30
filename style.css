@@ -4,23 +4,77 @@
     box-sizing: border-box;
 }
 
-body {
-    width: auto;
-    height: 100vh;
-}
-
 :root {
     --color1: rgb(74, 4, 47);
-    --color2: #fce8f6;
-    --color3: rgb(151, 23, 102);
+    --color2: rgb(171, 62, 129);
+    --color3: rgb(223, 157, 198);
+    --color4: rgb(45, 102, 89);
 }
 
+body {
+    display: grid;
+	grid-template-rows: auto;
+	width: auto;
+	height: 100vh;
+	justify-items: center;
+	align-items: center;
+    background-color: var(--color4);
+    margin: 10px;
+}
 
+/* ···················· CÓDIGO DE LOS EJERCICIOS ························· */
+/* Estilos compartidos entre la imagen y la tabla */
+.pixShad {
+    width: 250px;
+    box-shadow: 2px 2px black;
+}
 
+/* Estilos aplicados únicamente a la tabla y sus descendientes */
+#tableID {
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: white;
+}
 
+#tableID, #tableID td {
+    border: red 3px solid;
+}
 
-  /* SCROLLBAR ############################################## */
+#tableID th {
+    font-family: Verdana, sans-serif;
+    background-color: pink;
+}
 
+#tableID td {
+    padding-left: 5px;
+    font-family: Impact, sans-serif;
+}
+
+/* Estilos para las diferentes columnas de la tabla */
+#tableID td:first-child {
+    width: 15%;
+    background-color: hotpink;
+}
+
+#tableID td:nth-child(2) {
+    width: 60%;
+}
+
+#tableID td:last-child {
+    width: 25%;
+}
+
+/* Estilo usado únicamente en una línea de la tabla */
+#reproduciendo {
+    background-color: yellow;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 0px black;
+}
+
+/* ··················· FIN CÓDIGO DE LOS EJERCICIOS ······················ */
+
+/* Estilos para el scrollbar de la página */
 ::-webkit-scrollbar {
 	width: 20px;
 	height: 20px;
