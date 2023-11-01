@@ -1,9 +1,11 @@
+/* Estilos aplicados a todo el documento */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Variables para usar en cualquier parte del documento */
 :root {
     --color1: rgb(74, 4, 47);
     --color2: rgb(171, 62, 129);
@@ -11,6 +13,7 @@
     --color4: rgb(45, 102, 89);
 }
 
+/* Estilos aplicados a la estructura de base del documento */
 body {
     display: grid;
 	grid-template-rows: auto;
@@ -19,7 +22,6 @@ body {
 	justify-items: center;
 	align-items: center;
     background-color: var(--color4);
-    margin: 10px;
 }
 
 /* ···················· CÓDIGO DE LOS EJERCICIOS ························· */
